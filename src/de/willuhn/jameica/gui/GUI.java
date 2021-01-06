@@ -135,10 +135,10 @@ public class GUI implements ApplicationController
 
       ////////////////////////////////////////////////////////////////////////
       // Netbook-Mode
-      // Wenn das Display weniger als 700 Pixel hoch ist, aktivieren wir
+      // Wenn das Display weniger als 800 Pixel hoch ist, aktivieren wir
       // automatisch den "Netbook"-Mode
       Rectangle r = GUI.getDisplay().getBounds();
-      if (r.height < 700)
+      if (r.height < 800)
       {
         Logger.info("display height smaller than 700px (" + r.width + "x" + r.width + ") - auto-activating netbook mode");
         Customizing.SETTINGS.setAttribute("application.scrollview",true);
@@ -355,7 +355,7 @@ public class GUI implements ApplicationController
     if (maximized)
     {
       Logger.info("window size: maximized");
-      getShell().setLocation(0,0);
+      getShell().setLocation(x,y); // Bei maximized ebenfalls die Position angeben - Anwendung kann sich ja auf dem zweiten Screen befunden haben
       getShell().setMaximized(true);
     }
     else
