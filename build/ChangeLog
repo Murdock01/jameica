@@ -1,10 +1,13 @@
 HEAD 2.11 (nightly)
 
+  * NEW: 0138 Update auf SWT 4.19M3 für macos64 - das Druckproblem https://bugs.eclipse.org/bugs/show_bug.cgi?id=569185 scheint dort behoben zu sein
+  * NEW: 0137 Update auf SWT 4.18 für linux64, linux-arm64, win64 und macos64
+
 2020-11-27 Version 2.10
   
   * NEW: 0136 Neue Launcher für Windows mit aktualisierter Versionsnummer
   * NEW: 0135 JRE-Update für Windows und Mac auf 11.0.9.1_1
-  * NEW: 0134 Update auf SWT 4.17 für für linux64, linux-arm64 (jetzt offiziell von Eclipse untestützt), win64 und macos64
+  * NEW: 0134 Update auf SWT 4.17 für linux64, linux-arm64 (jetzt offiziell von Eclipse untestützt), win64 und macos64
   * NEW: 0133 Parameter "-Dsun.security.smartcardio.library" zu jameica-macos64.sh hinzugefügt - für MacOS Big Sur nötig - siehe https://homebanking-hilfe.de/forum/topic.php?p=157884#real157884
   * NEW: 0132 Fenster-Position auch im Maximiert-Zustand speichern - siehe https://homebanking-hilfe.de/forum/topic.php?p=157397#real157397
   * NEW: 0131 Sprache wieder per Datei->Einstellungen konfigurierbar
